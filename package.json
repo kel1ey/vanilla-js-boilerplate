@@ -7,7 +7,8 @@
     "build:production": "webpack --config webpack.prod.js",
     "build": "webpack --config webpack.dev.js",
     "watch": "webpack -w --config webpack.dev.js",
-    "dev": "npm run build && webpack-dev-server --open --config webpack.dev.js"
+    "dev": "npm run build && webpack-dev-server --open --config webpack.dev.js",
+    "lint": "eslint ./src/js --fix"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,14 @@
     "clean-webpack-plugin": "^4.0.0",
     "core-js": "^3.18.1",
     "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.3.0",
     "node-sass": "^6.0.1",
+    "prettier": "2.4.1",
     "sass-loader": "^12.1.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.54.0",
